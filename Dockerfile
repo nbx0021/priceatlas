@@ -1,7 +1,7 @@
 # ==========================================
 # Stage 1: Build the React Frontend (Node.js)
 # ==========================================
-FROM node:18-alpine as build-step
+FROM node:18-alpine AS build-step
 WORKDIR /app-frontend
 
 # 1. Install dependencies first (better caching)
