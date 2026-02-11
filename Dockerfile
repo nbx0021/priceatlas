@@ -23,7 +23,8 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # 1. Install system dependencies (needed for some python tools)
-RUN apt-get update && apt-get install -y gcc
+
+RUN apt-get update && apt-get install -y gcc python3-dev build-essential
 
 # 2. Install Python dependencies
 COPY ./backend/requirements.txt ./
